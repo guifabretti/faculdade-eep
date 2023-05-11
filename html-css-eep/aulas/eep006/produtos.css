@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* reset do css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); /*'Lora'*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*'Roboto'*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; /*Transformei 1rem em 10px */
+    --nav-bg-color: rgb(0, 0, 0);
+    --nav-text-color: white;
+    --cor-do-cachorro: #B55040;
+}
+
+body{
+    font-size: 1.5rem; /* 1rem = 16px // depois da transformação no root fica: 1.5rem = 15px ou 1rem = 10px*/
+    font-family: 'Lora', serif;
+    background-color: var(--cor-do-cachorro);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--nav-bg-color);
+    padding: 0 2.4rem;
+    height: 10rem;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+a.navegacao{
+    text-decoration: none;
+    color: var(--nav-text-color);
+    border: 1px solid var(--cor-do-cachorro);
+    padding: 8px 2rem;
+    border-radius: 5px;
+}
+
+a.navegacao:hover{
+    color: var(--nav-bg-color);
+    background-color: var(--cor-do-cachorro);
+    transition-duration: 0.5s;
+    border: 1px solid var(--cor-do-cachorro);
+    font-weight: bold;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 4rem;  /*espaçamento entre os elementos*/
+}
+
+button{
+    padding: 8px 2rem;
+    color: var(--nav-bg-color);
+    background-color: var(--cor-do-cachorro);
+    border-radius: 5px;
+    border: 1px solid var(--cor-do-cachorro);
+    cursor: pointer;
+}
+
+#local{
+    background-color: var(--cor-do-cachorro);
+    color: black;
+    font-weight: bold;
+}
+
+#logo{
+    height: 10rem;
+}
+
+main{
+    margin: auto;
+    max-width: 110rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0rem 2rem;
+    text-align: justify;
+}
+
+.img_produtos{
+    height: 25rem;
+    width: 25rem;
+    /* margin-top: 2rem; */
+}
+
+.produtos{
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #B55040;
+}
+.img_produtos:hover{
+    border: 1px solid #B55040;
+}

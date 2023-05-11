@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+li{
+    width: 1000px;
+    height: 35px;
+    background-color: #808080;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 5px solid #fff;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: bisque;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

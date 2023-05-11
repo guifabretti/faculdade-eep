@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!--
+        Solicitar o nome do aluno
+        Solicitar 3 notas
+        Calcular a media aritimetica
+        Exibir o nome, as notas e a media 
+    -->
+    
+    <h1>Exercício</h1>
+    <button onclick="calcular()">Clique para iniciar o exercício</button>
+    
+        <p>Seu nome é:</p>
+        <p id="nome">x</p>
+        
+        <p>Suas notas foram:</p>
+        <p id="n1">x</p>
+        <p id="n2">x</p>
+        <p id="n3">x</p>
+
+        <p>A média aritimetica das notas é:</p>
+        <p id="media">x</p>
+
+    <script>
+        function calcular(){
+            let nome = window.prompt("Digite seu nome:");
+            let n1 = Number(window.prompt("Digite sua primeira nota"));
+            let n2 = Number(window.prompt("Digite sua segunda nota"));
+            let n3 = Number(window.prompt("Digite sua terceira nota"));
+            
+            media = (n1 + n2 + n3)/3;
+
+            let saida = document.getElementById("media");
+            let snome = document.getElementById("nome");
+            let sn1 = document.getElementById("n1");
+            let sn2 = document.getElementById("n2");
+            let sn3 = document.getElementById("n3");
+
+            saida.innerHTML = `${media}`;
+            snome.innerHTML = `${nome}`;
+            sn1.innerHTML = `${n1}`;
+            sn2.innerHTML = `${n2}`;
+            sn3.innerHTML = `${n3}`;
+  
+        }
+    </script>
+</body>
+</html>

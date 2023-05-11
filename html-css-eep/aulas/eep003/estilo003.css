@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.cabecalho {
+    text-align: center;
+}
+
+.lista {
+    text-align: left;
+    list-style-image: url("seta.png") ;
+    list-style-position: inside;
+    margin-left: 30%;
+}
+
+.cor_de_fundo{
+    background-color: aqua;
+}

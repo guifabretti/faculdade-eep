@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-22 10:32:12 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIxMDoxNzowMyAiOzI0MDg="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIxMDozMjoxMiAiOzE7MjUxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero inteiro, veremos se ele &#233; maior ou menor que 10.&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero&gt;10">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; maior que 10&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero=10">
+                        <then>
+                            <output expression="&quot;Seu n&#250;mero n&#227;o &#233; maior nem menor, pois ele j&#225; &#233; o n&#250;mero 10 haha!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Seu n&#250;mero &#233; menor que 10&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

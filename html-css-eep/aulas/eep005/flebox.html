@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        .menu{
+            background-color: gray;
+            height: 80px;
+            border: 2px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lateraldir{
+            width: 100%;
+        }
+        .latesq{
+            background-color: gray;
+            height: 500px;
+            border: 2px solid black;
+            width: 30%;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+       
+        .metade1{
+            background-color: gray;
+            height: 248px;
+            border: 2px solid black;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .metade2{
+            background-color: gray;
+            height: 248px;
+            border: 2px solid black;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .secao{
+            display: flex;
+        }
+
+        .dentro{
+            background-color: rgb(116, 44, 44);
+            border: 2px solid grey;
+            border-radius: 5px;
+            height: 50px;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dentro:hover{
+            background-color: chocolate;
+        }
+        .rodape{
+            background-color: gray;
+            height: 80px;
+            border: 2px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">CABEÇALHO</div>
+
+    <div class="secao">
+        <div class="latesq">
+            <div class="dentro">MENU 1</div>
+            <div class="dentro">MENU 2</div>
+            <div class="dentro">MENU 3</div>
+            <div class="dentro">MENU 4</div>
+            <div class="dentro">MENU 5</div>
+            <div class="dentro">MENU 6</div>
+        </div>
+        <div class="lateraldir">
+            <div class="metade1">CONTEÚDO 1</div>
+            <div class="metade2">CONTEÚDO 2</div>
+        </div>
+    </div>
+
+    <div class="rodape">RODAPÉ</div>
+</body>
+</html>

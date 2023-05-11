@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="calcular()"> Clique aqui para realizar os calculos</button>
+    <section>
+        <p>O resultado vai aparecer aqui:</p>
+        <p id="res1">x</p>
+        <p id="res2">x</p>
+    </section>
+
+    <script>
+        window.alert("Bem vindo ao meu site!");
+        function calcular(){
+            let numero1 = window.prompt("Digite um número:");
+
+            let res1  = document.getElementById("res1");
+            res1.innerHTML = `O dobro de ${numero1} é ${numero1*2}, o quadrado do mesmo é ${numero1*numero1}`;
+
+            let res2 = document.getElementById("res2");
+            res2.innerHTML = `O Triplo de ${numero1} é ${numero1*3}, o cubo do mesmo é ${numero1*numero1*numero1}`;
+        }
+    </script>
+
+</body>
+</html>

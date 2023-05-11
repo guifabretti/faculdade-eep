@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauna e Flora Brasileira</title>
+    <link rel="stylesheet" href="fauna.css">
+    <link rel="shortcut icon" href="imagens-e-videos/arara_logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <img src="imagens-e-videos/arara_logo.png" alt="logo arara" id="img_logo_arara">
+
+        <ul id="linhas_navegacao">
+            <li><a href="beijaflor.html" class="navegacao">Beija Flor</a></li>
+            <li><a href="calopsita.html" class="navegacao">Calopsita</a></li>
+            <li><a href="joaodebarro.html" class="navegacao">João de Barro</a></li>
+            <li><a href="home.html" class="navegacao">Página Inicial</a></li>
+            <li><a href="andorinha.html" class="navegacao">Andorinha</a></li>
+            <li><a href="sabia.html" class="navegacao">Sabiá</a></li>
+            <li><a href="bemtevi.html" class="navegacao">Bem-te-vi</a></li>
+        </ul>
+        <a href="cadastro.html"><button id="botao_cadastro">Cadastro</button></a>
+    </nav>
+    <main>
+        <h1 id="titulo_h1_cadastro">Cadastro de Clientes</h1>
+        <br>
+        <form action="recebe.php">
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required> <!-- required = obrigatório preencher -->
+
+            <label for="rg">RG</label>
+            <input type="text" id="rg" name="rg" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone">
+
+            <label for="nomeMae">Nome da Mãe</label>
+            <input type="text" id="nomeMae" name="nomeMae" required>
+
+            <label for="tituloEleitor">Título de Eleitor</label>
+            <input type="text" id="tituloEleitor" name="tituloEleitor" required>
+            
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+            
+            <label for="localNascimento">Local de Nascimento:</label>
+            <input type="text" id="localNascimento" name="localNascimento" required>
+
+            <button type="reset" class="botao_form">Limpar</button>
+            <button type="submit" class="botao_form">Enviar</button>
+        </form>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer id="rodape">
+        <p id="p_rodape">Tarefa desenvolvida por <a href="https://github.com/guifabretti" id="link_rodape">Guilherme Fabretti</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- 
+        ler numero e determinar:
+         - absoluto
+         - parte inteira
+         - o inteiro mais proximo
+         - raiz quadrada
+         - raiz cubica
+         - o valor elevado a 5 potencia
+     -->
+
+
+     <h1>Exercicio 2</h1>
+     <button onclick="calcular()">Calcular</button>
+     <section>
+        <p id="absoluto">Absoluto</p>
+        <p id="inteiro">inteiro</p>
+        <p id="arredondar">arredondar</p>
+        <p id="raiz_quad">raiz_quad</p>
+        <p id="raiz_cub">raiz_cub</p>
+        <p id="potencia">potencia</p>
+     </section>
+
+     <script>
+        function calcular(){
+            let num = Number(window.prompt("Digite um numero"));
+            let id1 = document.getElementById("absoluto");
+            let id2 = document.getElementById("inteiro");
+            let id3 = document.getElementById("arredondar");
+            let id4 = document.getElementById("raiz_quad");
+            let id5 = document.getElementById("raiz_cub");
+            let id6 = document.getElementById("potencia");
+            id1.innerHTML = `absoluto: ${Math.abs(num)}`;
+            id2.innerHTML = `inteiro: ${Math.trunc(num)}`;
+            id3.innerHTML = `arredondar: ${Math.round(num)}`;
+            id4.innerHTML = `raiz_quad: ${Math.sqrt(num)}`;
+            id5.innerHTML = `raiz_cub: ${Math.cbrt(num)}`;
+            id6.innerHTML = `potencia: ${Math.pow(num,5)}`;
+        }
+     </script>
+</body>
+</html>

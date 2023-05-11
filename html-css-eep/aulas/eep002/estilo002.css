@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#cabecalho1{
+    text-align: center;
+}
+#cabecalho2{
+    text-align: center;
+}
+#cabecalho3{
+    text-align: center;
+}
+#cabecalho4{
+    text-align: center;
+}
+#cabecalho5{
+    text-align: center;
+}
+#lista1{
+    text-align: center;
+    list-style-type: none;
+}
+#lista2{
+    text-align: center;
+    list-style-type: none;
+}
+#lista3{
+    text-align: center;
+    list-style-type: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets & CIA - Cadastro</title>
+    <link rel="stylesheet" href="contatos.css">
+    <link rel="shortcut icon" href="imagem-e-videos/logoeuamopets.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <img src="imagem-e-videos/logoeuamopets.png" alt="Logo Pets">
+        
+        <ul>
+            <li><a href="sitezinho.html" class="navegacao">Home</a></li>
+            <li><a href="produtos.html" class="navegacao">Produtos</a></li>
+            <li><a href="depoimentos.html" class="navegacao">Depoimentos</a></li>
+        </ul>
+        
+        <a href="contatos.html"><button class="botao">Cadastro</button></a>
+    </nav>
+    
+    
+    <main>
+        <h1>Cadastro de Clientes</h1>
+        <br>
+        <form action="recebe.php">
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required> <!-- required = obrigatório preencher -->
+
+            <label for="rg">RG</label>
+            <input type="text" id="rg" name="rg" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone">
+
+            <label for="nomeMae">Nome da Mãe</label>
+            <input type="text" id="nomeMae" name="nomeMae" required>
+
+            <label for="tituloEleitor">Título de Eleitor</label>
+            <input type="text" id="tituloEleitor" name="tituloEleitor" required>
+            
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+            
+            <label for="localNascimento">Local de Nascimento:</label>
+            <input type="text" id="localNascimento" name="localNascimento" required>
+
+            <button type="reset" class="botao_form">Limpar</button>
+            <button type="submit" class="botao_form">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-22 09:44:50 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIwOTozNDozNSAiOzI0MjA="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIwOTo0NDo1MCAiOzE7MjUyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual a nota da sua primeira prova?&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Qual a nota da sua segunda prova?&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <assign variable="media" expression="(nota1+nota2)/2"/>
+            <if expression="media&gt;7">
+                <then>
+                    <output expression="&quot;Voc&#234; foi aprovado com a m&#233;dia de:&quot; &amp;media" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media&lt;5">
+                        <then>
+                            <output expression="&quot;Voc&#234; foi reprovado com a media de:&quot; &amp;media" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Voc&#234; ter&#225; que refazer o exame, sua m&#233;dia ficou:&quot; &amp;media" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
