@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-22 11:35:32 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIxMToxOTozMCAiOzI0MTE="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIxMTozNTozMiAiOzE7MjUxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, Nfinal" type="Real" array="False" size=""/>
+            <declare name="faltas, Sfinal" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ol&#225; aluno! Forne&#231;a as seguintes informa&#231;&#245;es para mim, nesta ordem,  nota da primeira prova, nota da segunda prova, nota da terceira prova e seu n&#250;mero de faltas&quot;" newline="True"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <input variable="faltas"/>
+            <assign variable="Nfinal" expression="(n1+n2+n3)/3"/>
+            <if expression="Nfinal&gt;=7">
+                <then>
+                    <assign variable="Sfinal" expression="(faltas*100)/80"/>
+                    <if expression="Sfinal&lt;=25">
+                        <then>
+                            <output expression="&quot;Aprovado!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Reprovado por Falta, passou dos 25%, com &quot; &amp;Sfinal" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Reprovado por m&#233;dia abaixo de 7, sendo ela:&quot; &amp;Nfinal" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

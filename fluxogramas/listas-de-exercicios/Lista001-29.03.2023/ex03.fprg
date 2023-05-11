@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-22 10:43:56 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIxMDozNjoyMSAiOzI0MDk="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIxMDo0Mzo1NiAiOzE7MjUyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva um n&#250;mero inteiro, logo ap&#243;s informaremos se ele &#233; par ou &#237;mpar&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero%2==0">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; par!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu n&#250;mero &#233; &#237;mpar!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

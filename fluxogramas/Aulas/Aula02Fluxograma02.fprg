@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-22 09:33:36 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIwNzo0MDoyNSAiOzI0MTQ="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUdVSTsyMDIzLTAzLTIyOyIwOTozMzozNiAiOzI7MjUyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma, bebidas, comidas, couver, contafinal, taxa, rachada, qntpessoas" type="Real" array="False" size=""/>
+            <declare name="resposta" type="Boolean" array="False" size=""/>
+            <output expression="&quot;digite os gastos com comida:&quot;" newline="True"/>
+            <input variable="comidas"/>
+            <output expression="&quot;Digite os gastos com bebida:&quot;" newline="True"/>
+            <input variable="bebidas"/>
+            <output expression="&quot;Digite os gastos com couver:&quot;" newline="True"/>
+            <input variable="couver"/>
+            <output expression="&quot;Deseja pagar a taxa do gar&#231;om? Sim ou N&#227;o&quot;" newline="True"/>
+            <input variable="resposta"/>
+            <if expression="resposta=&quot;sim&quot;">
+                <then>
+                    <output expression="&quot;Digite a taxa do gar&#231;om:&quot;" newline="True"/>
+                    <input variable="taxa"/>
+                    <assign variable="contafinal" expression="(comidas+bebidas+couver)*((taxa/100) + 1)"/>
+                </then>
+                <else>
+                    <assign variable="contafinal" expression="comidas+bebidas+couver"/>
+                </else>
+            </if>
+            <output expression="&quot;A sua conta ficou:&quot; &amp;contafinal" newline="True"/>
+            <output expression="&quot;Qual ser&#225; a sua forma de pagamento? Cart&#227;o ou Dinheiro?&quot;" newline="True"/>
+            <input variable="resposta"/>
+            <if expression="resposta=&quot;Cart&#227;o&quot;">
+                <then>
+                    <output expression="&quot;D&#233;bito ou cr&#233;dito? D&#233;bito ou Cr&#233;dito?&quot;" newline="True"/>
+                    <input variable="resposta"/>
+                    <if expression="resposta=&quot;Cr&#233;dito&quot;">
+                        <then>
+                            <assign variable="contafinal" expression="contafinal * 1.05"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Sua conta final ficou:&quot; &amp;contafinal" newline="True"/>
+            <output expression="&quot;Vai rachar a conta? Sim ou n&#227;o?&quot;" newline="True"/>
+            <if expression="resposta=&quot;sim&quot;">
+                <then>
+                    <output expression="&quot;Digite a quantidade de pessoas&quot;" newline="True"/>
+                    <input variable="qntpessoas"/>
+                    <assign variable="rachada" expression="contafinal/qntpessoas"/>
+                    <output expression="&quot;O valor a pagar por pessoa &#233;:&quot; &amp;contafinal" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua conta final ficou:&quot; &amp;contafinal" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
