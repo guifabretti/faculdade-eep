@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 - Exercícios JS - EEP</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body{
+            background-color: black;
+        }
+        p{
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+        button{
+            padding: 5px;
+            font-size: 16px;   
+        }
+        section#botoes{
+            text-align: center;
+        }
+        form{
+            background-color: rgb(29, 29, 29);
+            width: 350px;
+            padding: 20px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+            border: 1px white solid;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" id="formulario" onsubmit="validarLogin(event)">
+        <p>
+            <label for="inome">Digite seu usuário:</label>
+            <input type="text" name="nome" id="inome" required>
+        </p>
+        <p>
+            <label for="isenha">Digite sua senha:</label>
+            <input type="checkbox" onclick="mostrarSenha()">
+            <input type="password" name="senha" id="isenha" required>
+        </p>
+        <p id="mensagem"></p>
+        <section id="botoes">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </section>
+    </form>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,16 +1,11 @@
-
-//FALTA TERMINAR
-
 function verificar(){
-    let atual = Number(new Date.getFullYear())
-    let ano = Number(document.getElementById("iano"))
+    let hoje = new Date()
+    let ano = Number(document.getElementById("iano").value)
 
-    let idade = atual - ano
+    let idade = hoje.getFullYear() - ano
     
     let res = document.getElementById("resposta")
 
     res.innerHTML = `<p>Você tem ${idade} anos</p>`
 
 }
-
-//FALTA TERMINAR
