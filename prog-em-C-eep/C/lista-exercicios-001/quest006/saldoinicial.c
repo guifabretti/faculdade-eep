@@ -11,7 +11,28 @@
 
 int main(){
     float saldoInicial;
+    float saldoAtual;
+    float valorMovimentacao;
+    char tipoMovimentacao;
 
-    printf("Digite ''")
+    printf("Digite o saldo inicial da sua conta: ");
+    scanf("%f", &saldoInicial);
     
+    saldoAtual = saldoInicial;
+
+    for (int i = 0; i < 5; i++){
+        printf("Digite o tipo de movimentacao (D para deposito, S para saque): ");
+        scanf(" %c", &tipoMovimentacao);
+
+        printf("Digite o valor da movimentacao: ");
+        scanf("%f", &valorMovimentacao);
+
+        if (tipoMovimentacao == 'D' || tipoMovimentacao == 'd'){
+            saldoAtual += valorMovimentacao;
+        } else if (tipoMovimentacao == 'S' || tipoMovimentacao == 's'){
+            saldoAtual -= valorMovimentacao;
+        }        
+    }
+    printf("Saldo inicial: %.2f", saldoInicial);
+    printf("Saldo atual: %.2f", saldoAtual);
 }
