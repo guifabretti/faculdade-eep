@@ -18,7 +18,7 @@ int main(){
     float porcentagem;
 
     i = 1;
-    while(i <= 6){
+    for (i = 0; i <= 6; i++){
         printf("\n\t digite o sexo (m) masculino, (f) feminino da pessoa %d: ", i);
         fflush(stdin);
         scanf("%c", &sexo);

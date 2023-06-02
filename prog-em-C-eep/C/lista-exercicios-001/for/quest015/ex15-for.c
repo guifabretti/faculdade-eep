@@ -9,9 +9,10 @@ int main(){
     int incorrect_password;
     int i;
 
-    i = 1;
-    while(i <= 3){
-        printf("\n\t digite a senha:");
+
+    for (i = 1; i <= 3; i++)
+    {
+         printf("\n\t digite a senha:");
         scanf("%s", &password);
 
         if(strcmp(right_password, password) == 0){
@@ -21,13 +22,11 @@ int main(){
         else{
            printf("\n\t acesso negado."); 
            incorrect_password++;
+            if(incorrect_password == 3){
+                printf("\n\t o numero de tentativas foram excedidas.");
+            }
         }
 
-        if(incorrect_password == 3){
-            printf("\n\t o numero de tentativas foram excedidas.");
-        }
-    i++;
     }
-
     return 0;
 }
